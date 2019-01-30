@@ -9,19 +9,17 @@ import NavigationBar from './Components/NavigationBar/NavigationBar'
 class App extends Component {
   render() {
     return (
-      <Container >
+      <div style={{width: '100%', height: '100vh'}}>
+      <Container>
       
       <NavigationBar/>
         
-        <nav className="nav-bar">
-          <Link to='/' className="nav-item"><h4>Posts</h4></Link>
-          <Link to='/newPost' className="nav-item"><h4>New Post</h4></Link>
-          
-        </nav>
+        
         <div className='routeDiv'>
         {routes}
         </div>
       </Container>
+      </div>
     );
   }
 }

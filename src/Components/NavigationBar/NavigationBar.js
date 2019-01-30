@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {
     Row,
     Col,
@@ -15,16 +16,16 @@ export default function NavigationBar(){
 
     return(
 
-    <Navbar color="light" light >
+    <Navbar color="dark" >
             <NavbarBrand href="/">blogIT</NavbarBrand>
-                <Nav navbar='true' horizontal='true' justified>
+                <Nav navbar='true' vertical justified>
                 
                 <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
+                <Link to='/' className="nav-item"><h4>Posts</h4></Link>
                 </NavItem>
                 
                 <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                    <Link to='/newPost' className="nav-item"><h4>New Post</h4></Link>
                 </NavItem>
                 
                 </Nav>
